@@ -2,32 +2,33 @@ let nivelDoheroi = ""
 let numeroDevitorias = 112
 let numeroDederrotas = 35
 let saldoDevitorias
-let resultado = contar(numeroDevitorias, numeroDederrotas)
 
 
 function contar(numeroDevitorias, numeroDederrotas){
     return numeroDevitorias - numeroDederrotas
 }
 
-   if(resultado <= 10){
+let resultado = contar(numeroDevitorias, numeroDederrotas)
+   
+if(resultado <= 10){
         nivelDoheroi = "Ferro"
-    }
-    else if(resultado >= 10 && resultado <= 21){
+
+    }else if(resultado >= 10 && resultado <= 21){
         nivelDoheroi = "Bronze"
-    }
-    else if(resultado >= 21 && resultado <= 51){
+
+    }else if(resultado >= 21 && resultado <= 51){
         nivelDoheroi = "Prata"
-    }
-    else if(resultado >= 51 && resultado <= 81){
+
+    }else if(resultado >= 51 && resultado <= 81){
         nivelDoheroi = "Ouro"
-    }
-    else if(resultado >= 81 && resultado <= 91){
+
+    }else if(resultado >= 81 && resultado <= 91){
         nivelDoheroi = "Diamante"
-    }
-    else if(resultado >= 91 && resultado <= 101){
+
+    }else if(resultado >= 91 && resultado <= 101){
         nivelDoheroi = "Lendario"
-    }
-    else{
+        
+    }else{
         nivelDoheroi = "Imortal"
     }
 
